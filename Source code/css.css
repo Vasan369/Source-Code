@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* --------------- DESIGN ------------------- */
+
+.section {
+  padding-block: 5em;
+}
+::placeholder {
+  color: #ccc !important;
+}
+
+/* --------------- NAVIGATION BAR --------------- */
+
+nav {
+  background-color: rgba(182, 224, 250, 0.781);
+  transition: 0.3s;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+}
+.modal {
+  backdrop-filter: blur(10px);
+}
+
+/* --------------- BODY DESIGN --------------- */
+
+.main_body {
+  padding-inline: 5vw;
+}
+
+/* --------------- BODY BOX ---------------*/
+
+.body-box {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+/* --------------- TYPING TEXT --------------- */
+
+.body-name .text {
+  position: relative;
+}
+.text .typing-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border-left: 2px solid rgb(255, 0, 0);
+  animation: text 6s ease-in-out infinite;
+}
+@keyframes text {
+  40%,
+  60% {
+    left: calc(100% + 5px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+/* --------------- BODY TEXT BOX --------------- */
+
+.body-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 20px;
+}
+.body-text-btn {
+  display: flex;
+  gap: 30px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- BODY IMAGE BOX ---------------*/
+
+.body-image {
+  display: flex;
+  justify-content: right;
+  align-content: center;
+  width: 50%;
+}
+.image {
+  margin: auto 0;
+  width: 380px;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+  animation: imgFloat 4s ease-in-out infinite;
+}
+.image img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+}
+@keyframes imgFloat {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* -- ----- --- RESUABLE CSS --------------- */
+
+.top-header {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.card-header {
+  background-color: #f7f7f7;
+}
+
+/* --------------- ABOUT INFO --------------- */
+
+.about-info {
+  padding: 20px 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.card-footer {
+  background-color: #f7f7f7;
+}
+.certificate {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 60px;
+  justify-content: center;
+}
+.certificate div {
+  border: 1px dashed black;
+  border-radius: 10px;
+}
+
+/* --------------- SKILLS BOX --------------- */
+
+.bar {
+  background: #ddd;
+  height: 20px;
+  border-radius: 20px;
+}
+.progress-bar {
+  background-image: linear-gradient(
+    -255deg,
+    #55e9c6 0%,
+    #cf9ce7 48%,
+    #3320c2 100%
+  );
+  font-weight: bolder;
+  color: white;
+  height: 100%;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 3px -5px rgb(93, 192, 250), 0 3px 10px rgb(0, 60, 255);
+  background-size: 400% 400%;
+  animation: animate 5s ease-in infinite;
+  -webkit-animation: animate 5s ease-in infinite;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.skills-list {
+  display: flex;
+}
+
+/* --------------- PROJECTS BOX --------------- */
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.project-container > .card {
+  box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- FOOTER BOX --------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  background-color: rgba(143, 197, 248, 0.76);
+  backdrop-filter: blur(8px);
+}
+
+/* ---------------- MEDIA QUERY == 1024px / RESPONSIVE --------------- */
+
+@media only screen and (max-width: 1024px) {
+  .body-text {
+    padding: 0;
+  }
+  .image,
+  .image img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* --------------- MEDIA QUERY == 992px / RESPONSIVE --------------- */
+
+@media only screen and (max-width: 992px) {
+  .body-text {
+    order: 2;
+    justify-content: center;
+    align-content: center;
+    min-height: 40vh;
+  }
+  .social_icons {
+    margin-top: 1em;
+  }
+  .body-image {
+    order: 1;
+  }
+  .image,
+  .image img {
+    width: 250px;
+    height: 250px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .project-container {
+    justify-content: center;
+  }
+  .project-box {
+    width: 80%;
+  }
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(2, 129, 248);
+  border-radius: 30px;
+}
