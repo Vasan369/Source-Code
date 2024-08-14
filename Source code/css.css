@@ -28,6 +28,7 @@ nav {
 
 /* --------------- BODY DESIGN --------------- */
 
+
 .main_body {
   padding-inline: 5vw;
 }
@@ -36,8 +37,9 @@ nav {
 
 .body-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   height: 90vh;
+  overflow: hidden;
 }
 
 /* --------------- TYPING TEXT --------------- */
@@ -72,10 +74,7 @@ nav {
   display: flex;
   justify-content: center;
   align-content: center;
-  min-height: 80vh;
   flex-direction: column;
-  width: 50%;
-  padding-left: 20px;
 }
 .body-text-btn {
   display: flex;
@@ -90,14 +89,16 @@ nav {
   border-radius: 50%;
   box-shadow: 0 0.93em 1.25em rgba(0, 0, 0, 0.3);
 }
+.body-text-btn a img{
+  width: 50px;
+}
 
 /* --------------- BODY IMAGE BOX ---------------*/
 
 .body-image {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-content: center;
-  width: 50%;
 }
 .image {
   margin: auto 0;
@@ -148,9 +149,8 @@ nav {
   gap: 30px 60px;
   justify-content: center;
 }
-.certificate div {
-  border: 1px dashed black;
-  border-radius: 10px;
+.certificate a{
+  cursor: pointer;
 }
 
 /* --------------- SKILLS BOX --------------- */
@@ -235,27 +235,19 @@ footer {
 
 @media only screen and (max-width: 992px) {
   .body-text {
-    order: 2;
     justify-content: center;
     align-content: center;
     min-height: 40vh;
   }
-  .social_icons {
-    margin-top: 1em;
-  }
-  .body-image {
-    order: 1;
-  }
   .image,
   .image img {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
   }
   .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
   }
   .col {
     display: flex;
