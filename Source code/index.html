@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="description" content="This is my portfolio website...">
     <meta name="keywords" content="HTML,CSS,JavaScript,Bootstrap">
-    <meta name="author" content="Name">
-    <link rel="icon" href="image/logo.png">
+    <meta name="author" content="Vasanth">
+    <link rel="icon" href="img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vasan</title>
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
     <div class="container">
 
         <!-- --------------- NAVBAR --------------- -->
 
-        <nav class="navbar navbar-expand-lg rounded-bottom-5 justify-content-center sticky-top" id="heading">
+        <nav class="navbar navbar-expand-lg rounded-bottom-5 justify-content-center sticky-top" id="heading"  data-aos="zoom-in-down" data-aos-delay="300"  data-aos-duration="1000" data-aos-once="true">
             <div class="container-fluid">
                 <div class="ms-3 h2 fw-bold">Vasan .</div>
                 <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#nevbar">
@@ -24,10 +25,10 @@
                 </button>
                 <div id="nevbar" class="collapse navbar-collapse">
                     <div class="navbar-nav me-5 m-auto">
-                        <a href="#home" class="nav-link me-5"><img src="image/home.png" alt="" style="width: 25px;"> Home</a>
-                        <a href="#skills" class="nav-link me-5"><img src="image/skills.png" alt="" style="width: 25px;"> Skills</a>
-                        <a href="#projects" class="nav-link me-5"><img src="image/project.png" alt="" style="width: 25px;"> Project</a>
-                        <a href="#about" class="nav-link me-5"><img src="image/about.png" alt="" style="width: 25px;"> About</a>
+                        <a href="#home" class="nav-link me-5"><img src="img/home.png" alt="" style="width: 25px;"> Home</a>
+                        <a href="#skills" class="nav-link me-5"><img src="img/skills.png" alt="" style="width: 25px;"> Skills</a>
+                        <a href="#projects" class="nav-link me-5"><img src="img/project.png" alt="" style="width: 25px;"> Project</a>
+                        <a href="#about" class="nav-link me-5"><img src="img/about.png" alt="" style="width: 25px;"> About</a>
                     </div>
                 </div>
             </div>
@@ -40,25 +41,26 @@
 
             <!-- -------------- BODY BOX ---------------- -->
 
-            <section class="row body-box" id="home">
+            <section class="row body-box row-cols-lg-2" id="home">
+                <div class="col body-image" data-aos="fade-down" data-aos-delay="1000"  data-aos-duration="1000" data-aos-once="false">
+                    <div class="image">
+                        <img src="img/photo.jpg" alt="avatar">
+                    </div>
+                </div>
                 <div class="col body-text">
-                    <div class="body-name">
+                    <div class="body-name" data-aos="zoom-out" data-aos-delay="1600"  data-aos-duration="1000" data-aos-once="false">
                         <p class="display-5 fw-semibold text first-text">I'm a <span class="text typing-text text-primary">Developer</span></p>
                     </div>
-                    <div class="body-text-info mb-4">
+                    <div class="body-text-info mb-4" data-aos="zoom-out" data-aos-delay="2300"  data-aos-duration="1000" data-aos-once="false">
                         <p>Welcome to my portfolio showcasing my Front-end development skills using HTML, CSS, JavaScript and Bootstrap. Explore my projects and expertise in crafting interactive and responsive web experiences.
                         </p>
                     </div>
-                    <div class="body-text-btn">
-                        <a href="#" class="icon ms-5"><img src="image/linkedin.png" alt=""></a>
-                        <a href="#" class="icon"><img src="image/github.png" alt=""></a>
+                    <div class="body-text-btn" data-aos="fade-up" data-aos-delay="2600" data-aos-offset="0"  data-aos-duration="1000" data-aos-once="true">
+                        <a href="https://www.linkedin.com/in/vasanth001" class="icon ms-5"><img src="img/linkedin.png" alt="" style="width: 45px;"></a>
+                        <a href="https://github.com/Vasan369/Source-Code.git" class="icon"><img src="img/github.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col body-image">
-                    <div class="image">
-                        <img src="image/photo1.jpg" alt="avatar">
-                    </div>
-                </div>
+                
             </section>
 
 <!----------------------------- Skills ------------------------>
@@ -68,106 +70,107 @@
                     <h1>Skills</h1>
                 </div>
                 <div class="row row-cols-1 m-auto">
-                    <div class="col-12 skills-box">
+                    <div class="col-12 skills-box" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-once="false">
                         <div class="skills-header">
                             <h3 class="text-center mb-5">Front-end</h3>
                         </div>
                         <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/html.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/html.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="90"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
+                        <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/css.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/css.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="75"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
+                        <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/bootstrap.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/javascript.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="80"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
-                            <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/javascript.png" alt="" style="width: 25px;"></div>
-                            </div>
-                            <div class="col-8 bar scrl">
-                                <div class="progress-bar" data-complete="70"></div>
-                            </div>
-                        </div>
-                        <div class="skills-list">
-                            <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/react.png" alt="" style="width: 25px;"></div>
-                            </div>
-                            <div class="col-8 bar scrl">
-                                <div class="progress-bar" data-complete="85"></div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-12 skills-box mt-5">
+                    <div class="col-12 skills-box mt-5" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-once="false">
                         <div class="skills-header">
                             <h3 class="text-center mb-5">Back-end</h3>
                         </div>
                         <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/c.png" alt="" style="width: 25px;"></div>
-                            </div>
-                            <div class="col-8 bar scrl">
-                                <div class="progress-bar" data-complete="70"></div>
-                            </div>
-                        </div>
-                        <div class="skills-list pb-3"">
-                            <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/c++.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/cpp.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="85"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
+                        <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/java.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/java.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="90"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
+                        <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/python.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/python.png" alt="" style="width: 25px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="70"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 skills-box mt-5">
+                    <div class="col-12 skills-box mt-5" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-once="false">
                         <div class="skills-header">
                             <h3 class="text-center mb-5">Database</h3>
                         </div>
                         <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/mysql.png" alt="" style="width: 30px;"></div>
+                                <div><img src="img/mysql.png" alt="" style="width: 30px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
                                 <div class="progress-bar" data-complete="70"></div>
                             </div>
                         </div>
-                        <div class="skills-list pb-3"">
+                    </div>
+                    <div class="col-12 skills-box mt-5" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-once="false">
+                        <div class="skills-header">
+                            <h3 class="text-center mb-5">Frameworks</h3>
+                        </div>
+                        <div class="skills-list pb-3">
                             <div class="col-3 d-flex justify-content-center">
-                                <div><img src="image/mongodb.png" alt="" style="width: 25px;"></div>
+                                <div><img src="img/bootstrap.png" alt="" style="width: 30px;"></div>
                             </div>
                             <div class="col-8 bar scrl">
-                                <div class="progress-bar" data-complete="60"></div>
+                                <div class="progress-bar" data-complete="80"></div>
+                            </div>
+                        </div>
+                        <div class="skills-list pb-3">
+                            <div class="col-3 d-flex justify-content-center">
+                                <div><img src="img/reactjs.png" alt="" style="width: 30px;"></div>
+                            </div>
+                            <div class="col-8 bar scrl">
+                                <div class="progress-bar" data-complete="75"></div>
+                            </div>
+                        </div>
+                        <div class="skills-list pb-3">
+                            <div class="col-3 d-flex justify-content-center">
+                                <div><img src="img/spring.png" alt="" style="width: 30px;"></div>
+                            </div>
+                            <div class="col-8 bar scrl">
+                                <div class="progress-bar" data-complete="70"></div>
                             </div>
                         </div>
                     </div>
@@ -181,40 +184,44 @@
                     <h1>Projects</h1>
                 </div>
                 <div class="project-container">
-                    <div class="card rounded-5" style="width: 20rem;">
-                        <img src="image/age.png" class="card-img-top rounded-5" alt="">
+                    <div class="card rounded-5" style="width: 20rem;" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-once="false">
+                        <img src="img/ageimg.png" class="card-img-top rounded-5" alt="">
                         <div class="card-body">
                             <h3 class="card-title">Age Calculator</h3>
                             <p class="card-text">Created by HTML, CSS and JavaScript. Calculator of age in year, month and day based in the current date.</p>
-                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box2">Demo</button>
-                            <a href="#" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
+                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box2">Open</button>
+                            <a href="https://github.com/Vasan369/Age-Calculator.git" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
                         </div>
                     </div>
-                    <div class="card rounded-5" style="width: 20rem;">
-                        <img src="image/wallet.png" class="card-img-top rounded-5" alt="">
+                    <div class="card rounded-5" style="width: 20rem;" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-once="false">
+                        <img src="img/walletimg.png" class="card-img-top rounded-5" alt="">
                         <div class="card-body">
                             <h3 class="card-title">Mini Wallet</h3>
                             <p class="card-text">Created by HTML, CSS and JavaScript. Users can add currency to their wallet and remove them when needed as well as Transaction history.</p>
-                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box3">Demo</button>
-                            <a href="#" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
+                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box3">Open</button>
+                            <a href="https://github.com/Vasan369/Mini-wallet.git" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
                         </div>
                     </div>
-                    <div class="card rounded-5" style="width: 20rem;">
-                        <img src="image/math.png" class="card-img-top rounded-5" alt="">
+                    <div class="card rounded-5" style="width: 20rem;" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-once="false">
+                        <img src="img/mathimg.png" class="card-img-top rounded-5" alt="">
                         <div class="card-body">
                             <h3 class="card-title">Maths Game</h3>
                             <p class="card-text">Created by HTML, CSS and JavaScript</p>
-                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box4">Demo</button>
-                            <a href="#" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
+                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box4">Open</button>
+                            <a href="https://github.com/Vasan369/mathsgame.git" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
                         </div>
                     </div>
-                    <div class="card rounded-5" style="width: 20rem;">
-                        <img src="image/no to r.png" class="card-img-top rounded-5" alt="">
+                    <div class="card rounded-5" style="width: 20rem;" data-aos="fade-up"
+                    data-aos-anchor-placement="top-center" data-aos-once="false">
+                        <img src="img/ntorimg.png" class="card-img-top rounded-5" alt="">
                         <div class="card-body">
                             <h3 class="card-title">Number to Roman Numerals Converter</h3>
                             <p class="card-text">Created by HTML, CSS and JavaScript</p>
-                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box5">Demo</button>
-                            <a href="#" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
+                            <button id="cobtn" type="button" class="btn btn-outline-primary rounded-5 mb-1 me-5" data-bs-toggle="modal" data-bs-target="#box5">Open</button>
+                            <a href="https://github.com/Vasan369/no-to-roman.git" class="btn btn-outline-danger rounded-5 mb-1 me-5">Source</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +262,7 @@
                                 <button class="btn-close me-1" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
-                                <iframe height="490px" width="100%" src="math/index.html" ></iframe>
+                                <iframe height="490px" width="100%" src="mathgame/index.html" ></iframe>
                             </div>
                         </div>
                     </div>
@@ -278,8 +285,11 @@
 
 <!-- -----------------------   ABOUT  -------------------------- -->
 
-            <section>
-                <div class="card about-info mb-5" id="about">
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1></h1>
+                </div>
+                <div class="card about-info mb-5" data-aos="fade-up" data-aos-delay="300" data-aos-once="false">
                     <div class="card-header">
                         <h1 class="text-center">About Me</h1>
                     </div>
@@ -290,12 +300,33 @@
                         <h2 class="text-center mb-4">Certification</h2>
                         <div class="certificate">
                             <div style="width: 15rem;">
-                                <a><img src="image/blankimg.png" class="card-img rounded-3" alt="">
-                                <caption>Python</caption></a>
+                                <a><img src="img/Certificate.jpg" class="card-img border-0" data-bs-toggle="modal" data-bs-target="#certifi" alt="">
+                                <caption >Python</caption></a>
                             </div>
                             <div style="width: 15rem;">
-                                <a><img src="image/blankimg.png" class="card-img rounded-3" alt="">
+                                <a><img src="img/Java c.jpg" class="card-img border-0" data-bs-toggle="modal" data-bs-target="#certifi2"  alt="">
                                 <caption>Java Full Stack</caption></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 1 -->
+                <div class="modal fade" id="certifi">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-body">
+                                <img src="img/Certificate.jpg" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Certificate 2 -->
+                <div class="modal fade" id="certifi2">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                        <div class="modal-content rounded-5">
+                            <div class="modal-body">
+                                <img src="img/Java c.jpg" alt="" style="width: 100%;">
                             </div>
                         </div>
                     </div>
@@ -305,14 +336,18 @@
 
         <!-- --------------- FOOTER --------------- -->
 
-        <footer class="rounded-top-5">
+        <footer class="rounded-top-5" data-aos="zoom-in-up" data-aos-offset="0" data-aos-delay="300"  data-aos-duration="1000" data-aos-once="false">
             <div class="bottom-footer">
                 <p>Created by<a href="#home" style="text-decoration: none;"> -Vasan .</a></p>
             </div>
         </footer>
     </div>
 
-    <script src="bootstrap.bundle.min.js"></script>
-    <script src="js.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 </html>
